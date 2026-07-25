@@ -1,0 +1,39 @@
+# ---------------------------------------------------------------------------
+# Participant data must never be committed. These rules are a safety net, not
+# a substitute for checking what you are staging.
+# ---------------------------------------------------------------------------
+*.csv
+*.txt
+*.tsv
+*.xlsx
+*.xls
+*.mzML
+*.d/
+quant_table*
+*quanttables*
+mrmkit_output/
+otp/
+otpt/
+
+# the one data file that IS meant to be tracked: synthetic, no real measurements
+!data/synthetic_quant_table.txt
+
+# R
+.Rhistory
+.Rapp.history
+.RData
+.Ruserdata
+.Rproj.user/
+*.Rproj
+renv/library/
+
+# outputs
+*.png
+*.jpeg
+*.jpg
+*.pdf
+*.svg
+
+# OS
+.DS_Store
+Thumbs.db
